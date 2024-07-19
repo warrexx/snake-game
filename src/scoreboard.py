@@ -3,7 +3,7 @@ from turtle import Turtle
 ALIGNMENT = "center"
 FONT = ("Courier", 24, "bold")
 
-SCORE_RECORD = "../data/score.txt"
+SCORE_RECORD = "/Users/hawarie/Documents/GitHub/snake-game/src/score.txt"
 
 
 class Scoreboard(Turtle):
@@ -24,7 +24,7 @@ class Scoreboard(Turtle):
 
     def update_score(self) -> None:
         self.write(
-            "Score: {self.score} High Score {self.high_score}",
+            f"Score: {self.score} High Score {self.high_score}",
             False,
             align=ALIGNMENT,
             font=FONT,

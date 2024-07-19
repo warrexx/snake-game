@@ -54,7 +54,18 @@ class Snake:
 
         self.head.forward(20)
 
-    def is_tall_eaten(self):
+    def eat(self):
+        tail = self.segments[len(self.segments) - 1]
+        x_loc, y_loc = tail.xcor(), tail.ycor()
+        heading = tail.heading()
+        self.grow(x_loc, y_loc, heading)
+
+    def is_tail_eaten(self):
+        for seg in self.segments[1:]:
+            if self.head.distance(seg) < 15:
+                return True
+
+    def teleport(self):
         x_loc = self.head.xcor()
         y_loc = self.head.ycor()
 
