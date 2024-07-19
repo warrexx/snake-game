@@ -7,7 +7,7 @@ FOOD_SIZE = {"len": 0.5, "wid": 0.5}
 
 
 class Food(Turtle):
-    def __init__(self, height: float, width: float):
+    def __init__(self, height: float, width: float) -> None:
 
         super().__init__()
         self.color(FOOD_COLOR)
