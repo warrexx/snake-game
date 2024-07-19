@@ -3,7 +3,7 @@ from turtle import Turtle
 ALIGNMENT = "center"
 FONT = ("Courier", 24, "bold")
 
-SCORE_RECORD = "/Users/hawarie/Documents/GitHub/snake-game/src/score.txt"
+SCORE_RECORD = "data/score.txt"
 
 
 class Scoreboard(Turtle):
